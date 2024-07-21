@@ -1,0 +1,56 @@
+:root {
+  --color-light: #f0edeb; /* #4a4e69; */
+  --color-dark: #4a4e69; /*#e4d4ca; */
+  --color-3: #beb5bc;
+}
+
+form {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.35));
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+  max-width: 300px;
+  padding: 36px 24px;
+  text-align: center;
+  position: relative;
+}
+
+input,
+button {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.35);
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+}
+
+input {
+  width: 100%;
+}
+
+label {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  left: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition:
+    left 0.3s,
+    opacity 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  left: 200px;
+  opacity: 0;
+}
+
+#b:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>designermatch</artifactId>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>
+              <artifactId>lombok</artifactId>
+              <groupId>org.projectlombok</groupId>
+            </exclude>
+          </excludes>
+        </configuration>
+        <groupId>org.springframework.boot</groupId>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <!--	SPRING BOOT STARTER	-->
+    <dependency>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-validation</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-security</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-mail</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <optional>true</optional>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-websocket</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-messaging</artifactId>
+      <groupId>org.springframework</groupId>
+      <version>6.1.10</version>
+    </dependency>
+
+    <!--	DRIVER	-->
+    <dependency>
+      <artifactId>postgresql</artifactId>
+      <groupId>org.postgresql</groupId>
+      <scope>runtime</scope>
+      <version>42.7.3</version>
+    </dependency>
+
+
+    <!--	SECURITY	-->
+    <dependency>
+      <artifactId>spring-security-config</artifactId>
+      <groupId>org.springframework.security</groupId>
+      <version>6.2.4</version>
+    </dependency>
+    <dependency>
+      <artifactId>jjwt</artifactId>
+      <groupId>io.jsonwebtoken</groupId>
+      <version>0.12.3</version>
+    </dependency>
+
+
+    <!--	SWAGGER	-->
+    <dependency>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <groupId>org.springdoc</groupId>
+      <version>2.3.0</version>
+    </dependency>
+
+
+    <!--	DEV TOOLS	-->
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <optional>true</optional>
+      <version>1.18.32</version>
+    </dependency>
+
+
+    <!--	BOOTSTRAP &	JQUERY	-->
+    <dependency>
+      <artifactId>bootstrap</artifactId>
+      <groupId>org.webjars</groupId>
+      <version>5.3.3</version>
+    </dependency>
+    <dependency>
+      <artifactId>jquery</artifactId>
+      <groupId>org.webjars</groupId>
+      <version>3.7.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>webjars-locator-core</artifactId>
+      <groupId>org.webjars</groupId>
+      <version>0.58</version>
+    </dependency>
+
+
+    <!--	TEST	-->
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+      <version>3.3.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-security-test</artifactId>
+      <groupId>org.springframework.security</groupId>
+      <scope>test</scope>
+      <version>6.3.0</version>
+    </dependency>
+
+
+    <!--	OTHER	-->
+    <dependency>
+      <artifactId>snakeyaml</artifactId>
+      <groupId>org.yaml</groupId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>jaxb-api</artifactId>
+      <groupId>javax.xml.bind</groupId>
+      <version>2.4.0-b180830.0359</version>
+    </dependency>
+  </dependencies>
+  <description>Designmatch</description>
+  <groupId>com.pz</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <name>login</name>
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>3.3.1</version> <!-- lookup parent from repository -->
+  </parent>
+  <properties>
+    <java.version>17</java.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>maven_central</id>
+      <name>Maven Central</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </repository>
+  </repositories>
+  <version>1.0-RELEASE</version>
+</project>

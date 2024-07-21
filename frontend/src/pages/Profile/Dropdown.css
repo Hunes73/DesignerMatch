@@ -1,0 +1,8 @@
+.dropdown-level {
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.2rem 1rem 0.2rem 0.5rem;
+  color: grey;
+}
