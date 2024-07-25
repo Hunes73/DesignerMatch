@@ -451,7 +451,7 @@ function LoginForm() {
               />
               {!checkRegexPassword && password !== '' && (
                 <ErrorLabel>
-                  Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło
+                  Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło
                   musi zawierać między 8 a 24 znaki.{' '}
                 </ErrorLabel>
               )}
@@ -519,7 +519,7 @@ function LoginForm() {
               />
               {!checkRegexPassword && password !== '' && (
                 <ErrorLabel>
-                  Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło
+                  Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło
                   musi zawierać między 8 a 24 znaki.{' '}
                 </ErrorLabel>
               )}

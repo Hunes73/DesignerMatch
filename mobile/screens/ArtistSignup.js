@@ -214,7 +214,7 @@ const Signup = ({ navigation }) => {
                 <MsgBox type={messageType}> {message} </MsgBox>
                 {!isPasswordValid && (
                   <MsgBox type={'FAILED'}>
-                    Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło
+                    Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło
                     musi zawierać między 8 a 24 znaki.{' '}
                   </MsgBox>
                 )}

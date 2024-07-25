@@ -154,7 +154,7 @@ export const SignIn = ({ onSignIn }) => {
         />
         {!checkRegexPassword && password !== '' && (
           <ErrorLabel>
-            Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło musi
+            Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło musi
             zawierać między 8 a 24 znaki.{' '}
           </ErrorLabel>
         )}

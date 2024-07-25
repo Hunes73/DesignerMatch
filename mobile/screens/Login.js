@@ -212,10 +212,7 @@ const Login = ({ navigation }) => {
                 handleMessage('Proszę wypełnić oba pola', 'FAILED')
                 setSubmitting(false)
               } else if (!passwordPatternValidation(password)) {
-                handleMessage(
-                  'Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło musi zawierać między 8 a 24 znaki.',
-                  'FAILED'
-                )
+                handleMessage("Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło musi zawierać między 8 a 24 znaki.", 'FAILED')
                 setSubmitting(false)
               } else if (!emailPatternValidation(email)) {
                 handleMessage('Wpisano email w nieprawidłowym formacie', 'FAILED')

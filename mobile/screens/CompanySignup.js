@@ -253,7 +253,7 @@ const CompanySignup = ({ navigation }) => {
                 setSubmitting(false)
               } else if (!passwordPatternValidation(password)) {
                 handleMessage(
-                  'Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło musi zawierać między 8 a 24 znaki.',
+                  'Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło musi zawierać między 8 a 24 znaki.',
                   'FAILED'
                 )
                 setSubmitting(false)
@@ -361,7 +361,7 @@ const CompanySignup = ({ navigation }) => {
                 <MsgBox type={messageType}> {message} </MsgBox>
                 {!isPasswordValid && (
                   <MsgBox type={'FAILED'}>
-                    Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$%\nHasło
+                    Hasło musi zawierać wielkie i małe litery, liczby, oraz conajmiej jeden znak specjalny: !@#$% Hasło
                     musi zawierać między 8 a 24 znaki.{' '}
                   </MsgBox>
                 )}

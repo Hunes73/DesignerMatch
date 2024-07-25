@@ -111,10 +111,19 @@ nawiązywać z nimi kontakt.
 Aplikacja pozwala na tworzenie dwóch rodzajów kont:
 
 - **Konto artysty** - pozwala na tworzenie profilu artysty, dodawanie portfolio, umieszczanie
-  informacji o swoich umiejętnościach, doświadczeniu, wykształceniu, a także oczekiwaniach
-  finansowych.
+  informacji o swoich umiejętnościach, doświadczeniu, wykształceniu, a także profilach
+  społecznościowych.
 - **Konto firmy** - pozwala na tworzenie profilu firmy, dodawanie informacji o firmie, umieszczanie
   ofert pracy, a także przeglądanie profili artystów.
+
+Aplikacja pozwala na wyszukiwanie artystów według różnych kryteriów, takich jak:
+- **Lokalizacja** - np. Toruń, Warszawa, Kraków, Zdalnie
+- **Język** - np. polski, angielski, niemiecki
+- **Tagi** - np. fitness, internet, moda, zwierzęta
+- **Umiejętności** - np. logo, strona internetowa, plakat, T-shirt
+- **Doświadczenie** - np. Junior, Mid, Senior
+
+Aplikacja pozwala na nawiązywanie kontaktu z innymi użytkownikami poprzez czat.
 
 # Dodatkowe informacje
 
@@ -150,7 +159,7 @@ W skład zespołu wchodzą:
     - Klient HTTP: [Axios](https://axios-http.com/)
     - CSS-in-JS: [Styled Components](https://styled-components.com/)
     -
-    Ikony: [React Icons](https://react-icons.github.io/react-icons/), [Font Awesome](https://fontawesome.com/)
+  Ikony: [React Icons](https://react-icons.github.io/react-icons/), [Font Awesome](https://fontawesome.com/)
     - Modal: [React Modal](https://github.com/reactjs/react-modal)
     - Listy rozwijane: [React Dropdown](https://github.com/fraserxu/react-dropdown)
     - Wszystkie zależności dostępna jest w pliku `frontend/package.json`
